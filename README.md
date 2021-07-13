@@ -1,8 +1,6 @@
 # library-api
 
-The goal is to build a small API to manage a library, with users borrowing books.
-
-You can choose to code it with Python or PHP.
+The goal is to build a small API with PHP and [Slim](https://www.slimframework.com/).
 
 ## Excercise
 
@@ -49,5 +47,22 @@ Here are some improvements if you have remaining time. **They are not mandatory*
 
 ## Project setup
 
-For each language, a branch with a small boilerplate is provided to quickly start the project.
-Check `README.md` on the branch to see how to install and run it.
+Use this boilerplate to start your project.
+
+### Requirements
+
+- Composer  
+  You can install it locally, in this case replace all commands `composer` by `php composer.phar`.
+- PHP 7.2 or newer
+
+### Setup
+
+```sh
+$ composer install
+```
+
+### Launch app
+
+```sh
+$ php -S localhost:5000 -t app
+```
