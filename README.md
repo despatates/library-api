@@ -1,8 +1,6 @@
 # library-api
 
-The goal is to build a small API to manage a library, with users borrowing books.
-
-You can choose to code it with Python or PHP.
+The goal is to build a small API with Python and [Flask](https://flask.palletsprojects.com/) to manage a library, with users borrowing books.
 
 ## Excercise
 
@@ -49,5 +47,33 @@ Here are some improvements if you have remaining time. **They are not mandatory*
 
 ## Project setup
 
-For each language, a branch with a small boilerplate is provided to quickly start the project.
-Check `README.md` on the branch to see how to install and run it.
+Use this boilerplate to start your project.
+
+If you don't already installed it, install `python3` in your environment.
+
+Setup a virtual environment:
+
+```sh
+$ virtualenv venv
+$ source venv/bin/activate
+```
+
+Install flash and other dependencies:
+
+```sh
+$ pip install -r requirements.txt
+$ export FLASK_APP=main
+$ export FLASK_ENV=development
+```
+
+Then launch the flask app:
+
+```sh
+$ flask run
+```
+
+Disable the virtual env by running:
+
+```sh
+(venv)$ deactivate
+```
